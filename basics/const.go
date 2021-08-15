@@ -6,8 +6,8 @@ func main(){
 	const (
 		_ = iota   // pass 0 
 		monday 
-		tuesday
-		wednesday
+		tuesday = iota + 100 // wouldn't affect on next var's
+		wednesday // wednesday == 3
 		thursday
 		friday
 		saturday 
