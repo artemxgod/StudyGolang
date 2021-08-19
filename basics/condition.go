@@ -4,7 +4,7 @@ import "fmt"
 
 func main(){
 	// Task 1 "sign of the number"
-	/*
+	
 	var a int
 
 	fmt.Scan(&a)
@@ -14,12 +14,12 @@ func main(){
 		fmt.Print("Число отрицательное")
 	}else {
 		fmt.Print("Ноль")
-	}*/
+	}
 
 //---------------------------------------\\
 
 	// Task 2 "different digits of number"
-	/*var num,one,ten,hundred int
+	var num,one,ten,hundred int
 
 	fmt.Scan(&num)
 	one = num % 10
@@ -29,12 +29,12 @@ func main(){
 		fmt.Print("YES")
 	}else {
 		fmt.Print("NO")
-	}*/
+	}
 
 //---------------------------------------\\
 	
 	//Task 3 "first digit of the number"
-	/*var num uint
+	var num uint
 
 	fmt.Scan(&num)
 	switch {
@@ -48,12 +48,12 @@ func main(){
 		fmt.Print(num / 1000)
 	case num == 10000:
 		fmt.Print(num /10000)
-	}*/
+	}
 	
 //---------------------------------------\\
 
 	//Task4 "Lucky ticket"
-	/*var( num, one, one1, ten, ten1, hundred, hundred1 int
+	var( num, one, one1, ten, ten1, hundred, hundred1 int
 		sum int = 0
 		sum1 int = 0
 	)
@@ -71,12 +71,12 @@ func main(){
 		fmt.Print("YES")
 	}else {
 		fmt.Print("NO")
-	}*/
+	}
 	
 //---------------------------------------\\
 
 	//Task 4 "leap year"
-	/*var year uint
+	var year uint
 
 	fmt.Scan(&year)
 	if year % 400 == 0{
