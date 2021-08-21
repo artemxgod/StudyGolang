@@ -7,6 +7,7 @@ import "fmt"
 func main(){
 	//Task 1 - sum from a to b
 	var a, b, sum int
+
 	sum = 0
 	fmt.Scan(&a, &b)
 	for i := a; i<=b; i++{
@@ -18,6 +19,7 @@ func main(){
 
 	// Task 2 - sum of nums multiples to 8
 	var num, cnt, sum1 int
+
 	sum = 0
 	cnt = 0
 	fmt.Scanln(&cnt)
@@ -33,6 +35,7 @@ func main(){
 	//Task 3 - cnt of max
 
 	var cnt1, num1, max int
+	
 	max = 0
 	for fmt.Scan(&num1); num1 != 0; fmt.Scan(&num1){
 		if num1 > max{
