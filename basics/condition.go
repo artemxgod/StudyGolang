@@ -85,6 +85,6 @@ func main(){
 		fmt.Print("YES")
 	}else {
 		fmt.Print("NO")
-	}*/
+	}
 	fmt.Print("Done")
 }

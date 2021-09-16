@@ -30,7 +30,7 @@ func main(){
 	}
 //---------------------------------------\\
 
-	Task 3 - bank deposit
+//	Task 3 - bank deposit
 	var x,p,y,cnt int
 
 	fmt.Scan(&x)
