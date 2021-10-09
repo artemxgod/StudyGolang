@@ -93,4 +93,12 @@ func main(){
 			}
 		}
 		fmt.Print(cnt)
+
+		//P.S we can also use function "range" to get access to array's element Expl:
+		var workArray [10]int
+
+	for _ , elem := range workArray{
+		fmt.Print(elem)
+	}
 }
+

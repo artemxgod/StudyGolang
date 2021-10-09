@@ -4,7 +4,7 @@ import "fmt"
 
 func main(){
 	var n,a,b int
-	
+
 	 fmt.Scan(&n)
 	 n = fibonacci(n)
 	 fmt.Print(n)
@@ -45,4 +45,5 @@ func fibonacci(n int) int {
 	}
 	return cnt, sum
 }
+
 
