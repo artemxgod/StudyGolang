@@ -55,24 +55,24 @@ func M(p, v float64) float64{
 
 func main(){
 	//Task 1 - find hypotenuse
-	// var a, b float64
-	// fmt.Scan(&a, &b)
-	// fmt.Print(hypotenuse(a,b))
+	var a, b float64
+	fmt.Scan(&a, &b)
+	fmt.Print(hypotenuse(a,b))
 
 	//Task 2 - put * between
-	// var s string
-	// fmt.Scan(&s)
-	// fmt.Print(Star(s))
+	var s string
+	fmt.Scan(&s)
+	fmt.Print(Star(s))
 
 	//Task 3 - max digit
-	// var s string
-	// fmt.Scan(&s)
-	// fmt.Print(Max_digit(s))
+	var s string
+	fmt.Scan(&s)
+	fmt.Print(Max_digit(s))
 	
 	//Task 3 - ^2 every digit
-	// var s string 
-	// fmt.Scan(&s)
-	// Square(s)
+	var s string 
+	fmt.Scan(&s)
+	Square(s)
 
 	//Task 4 - pendulum swing
 	fmt.Print(T(1296, 6, 6))
