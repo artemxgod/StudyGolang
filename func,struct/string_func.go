@@ -60,8 +60,10 @@ func main() {
         strings.Trim("tetstet", "te"),
         // результат: s
 
+        //returns stringm concatenate []string and string
+        strings.Join(s, str)
 		// unicode functions
-
+       
 
     // проверка символа на цифру
 	fmt.Println(unicode.IsDigit('1')), // true
