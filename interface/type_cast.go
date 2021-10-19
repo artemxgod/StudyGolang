@@ -58,14 +58,12 @@ func CSVdivision(s string) float64{
 }
 func main(){
 	//task1 - strings with trash into number's sum
-	// var s, s1 string
-	// fmt.Scan(&s, &s1)
-	// fmt.Print(adding(s,s1))
+	var s, s1 string
+	fmt.Scan(&s, &s1)
+	fmt.Print(adding(s,s1))
 
 	//task2 - CSV division
 	str, _ := bufio.NewReader(os.Stdin).ReadString('\n')
 	str = strings.Trim(str, "\n")
 	fmt.Printf("%.4f", CSVdivision(str))
-
-	
 }

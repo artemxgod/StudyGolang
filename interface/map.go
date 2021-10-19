@@ -57,6 +57,6 @@ func main(){
 				delete(cityPopulation, idx)
 			}
 		}
-	}	w
+	}	
 	fmt.Print(cityPopulation)
 }
