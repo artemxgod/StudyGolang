@@ -64,9 +64,9 @@ func (b battery) String() string{
 
 func main(){
 	//task 1 - check type
-	// c := "+"
-	// a,b := 85.5, 75.3
-	// arif(a,b,c)
+	c := "+"
+	a,b := 85.5, 75.3
+	arif(a,b,c)
 
 	//task 2 - battery
 	var batteryForTest = battery{}
