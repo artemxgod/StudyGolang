@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strings"
+
 )
 func work(num int) int{
 	if num < 4{
@@ -11,6 +11,18 @@ func work(num int) int{
 		return num + 1
 	}
 }
+//task 1 - other solution
+func Task(){
+	cache := make(map[int]int, 10)
+for n, i := 0, 0; i < 10; i++ {
+	fmt.Scan(&n)
+	if _, exists := cache[n]; !exists {
+		cache[n] = work(n)
+	}
+	fmt.Print(cache[n], " ")
+}
+}
+
 func main(){
 
 	//Task 1 - time limit

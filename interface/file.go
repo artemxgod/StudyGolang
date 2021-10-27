@@ -88,8 +88,6 @@ func Readf(){
 			fmt.Print("index - ", index)
 		}
 	}
-	
-	
 }
 
 func NewReadf(){
@@ -112,11 +110,23 @@ func NewReadf(){
       }
    }
 }
+
+func Readthree(){
+	f, _ := os.Open("task.data")
+	data, _ := bufio.NewReader(f).ReadString('\n')
+	dataArr := strings.Split(data, ";")
+	for key, value := range dataArr {
+	   if value == "0" {
+		  fmt.Println(key + 1)
+		  break
+	   }
+	}
+}
 func main(){
 	if err := filepath.Walk(".", walkFunc); err != nil{
 		fmt.Printf("ошибка : %v/n", err)
 	}
-	 Readf()
+	Readf()
 	NewReadf()
 
 }
