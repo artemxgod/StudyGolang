@@ -67,3 +67,9 @@ func main(){
 		reversnum1 /= 10
 	}
 }
+//break from exact cycle:
+//MyLoop:
+//for key, val := range arr{
+	//...
+	//break MyLoop
+}

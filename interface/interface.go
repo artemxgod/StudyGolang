@@ -75,3 +75,21 @@ func main(){
 
 
 }
+
+//присвоить тип из интерфейса
+// type Flyer interface{
+// 	Fly()
+// }
+// type Bird struct{
+// 	name string
+// }
+// func (b Bird) Fly(){
+// 	fmt.Print("birds can fly")
+// }
+// func GoFly(f Flyer){
+// 	f.Fly()
+// 	if b, ok := f.(Bird); ok{
+// 		fmt.Print(b.name)
+// 	}
+
+// }

@@ -34,6 +34,7 @@ func fibonacci(n int) int {
 	}
 }
 //Task2
+//получение аргументов типа int любого кол-ва
 	func sumInt(num ...int) (int, int){
 	var sum,cnt int
 
@@ -45,5 +46,13 @@ func fibonacci(n int) int {
 	}
 	return cnt, sum
 }
+
+//we are able to name returnable variable
+func Foo1(a int) (res int){
+	res+= a
+	return res
+}
+
+
 
 

@@ -72,3 +72,7 @@ func main(){
 	}	
 	fmt.Print(cityPopulation)
 }
+
+//check existence of a value
+//_, exist := m["lastname"] exist - true/false
+

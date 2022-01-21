@@ -102,3 +102,9 @@ func main(){
 	}
 }
 
+//add slice in slice 
+//s1 = append(s1, s2...) 
+//or
+//var slm [][]int 
+//slm = append(slm, s2)
+
