@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 	"time"
 )
@@ -89,27 +88,16 @@ func Sqrt(n float64) float64{
 
 
 type Calendar struct{
-	month string
-	quater int
+	month int
 }
-func (obj* Calendar) NewCalendar(t time.Time){
-	
-	obj.month = t.Month().String()
-	switch {
-	case obj.month == "January" ||
-	obj.month == "February" ||
-	obj.month == "March": obj.quater = 1
-	case obj.month == "April" ||
-	obj.month == "May"||
-	obj.month == "June": obj.quater = 2
-	case obj.month == "July" ||
-	obj.month == "August"||
-	obj.month == "September": obj.quater = 3
-	case obj.month == "October" ||
-	obj.month == "Nowember"||
-	obj.month == "December": obj.quater = 4
-	}
+func NewCalendar(t* time.Time) Calendar{
+	month := t.Month()
+
+	return Calendar{int(month)}
 }
 
+func (c Calendar) CurrentQuater() int{
+	return (c.month)/3+1
+}
 func main(){
 }
