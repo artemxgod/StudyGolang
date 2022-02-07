@@ -24,7 +24,7 @@ func main(){
 		//open file
 		fileContent, err := ioutil.ReadFile("index.html")
 		if err != nil{
-			log.Println("index.html - not found",err)
+			log.Println("index.html - not found ",err)
 			w.WriteHeader(http.StatusNotFound)
 			return 
 		}
