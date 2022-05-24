@@ -1,6 +1,9 @@
 package main
 
 import (
+	"log"
+	"os"
+
 	tgbotapi "gopkg.in/telegram-bot-api.v4"
 )
 
@@ -16,5 +19,10 @@ type JokeResponse struct{
 }
 
 func main(){
-	 
+	bot, err := tgbotapi.NewBotAPI(os.Getenv("BOT-TOKEN"))
+	if err != nil {
+		log.Fatal(err)
+	} 
+	log.Printf("Authorized on account %s", bot.Self.UserName)
+
 }
