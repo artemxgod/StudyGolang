@@ -34,6 +34,14 @@ func main() {
 	err = db.Ping()
 	PanicOnErr(err)
 
+	// _, err = db.Exec(
+	// 	"INSERT INTO students (fio, score) VALUES ($1, $2)",
+	// 	"Artem", 10,
+	// )
+	// PanicOnErr(err)
+
+	// return
+
 	// итерируемся по многим записям
 	// Exec исполняет запрос и возвращает записи
 	rows, err := db.Query("SELECT fio FROM students")
